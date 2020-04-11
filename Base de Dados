@@ -1,0 +1,12 @@
+create database padaria;
+use padaria;
+create table encomenda(
+codigo int(5) not null auto_increment,
+cliente varchar(30) not null,
+produto varchar(15) not null,
+datadeemissao char(8) not null,
+prazo char(8) not null,
+preco decimal(10) not null,
+primary key (codigo)
+);
+describe encomenda;
